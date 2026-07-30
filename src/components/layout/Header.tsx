@@ -2,12 +2,14 @@ import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import Brand from "@/components/layout/Brand";
 import MobileNav from "@/components/layout/MobileNav";
+import NavDropdownController from "@/components/layout/NavDropdownController";
 import { ButtonLink } from "@/components/ui/Button";
 import { headerNavItems, primaryCtas } from "@/data/siteConfig";
 
 export default function Header() {
   return (
     <header className="siteHeader">
+      <NavDropdownController />
       <div className="container headerContainer">
         <div className="nav">
           <Brand />
